@@ -10,7 +10,7 @@ namespace CodeIntitution.Array
     {
         
 
-        public int[] rowMajorTraversal(int[,] matrix)
+        public int[] RowMajorTraversal(int[,] matrix)
         {
             
             // always check the parameter is null or not in any problem

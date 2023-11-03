@@ -4,9 +4,10 @@ using CodeIntitution.Array;
 Console.WriteLine("Hello, World!");
 
 #region Array
-
-#region Row-Major Traversal Problem
 RowTraversal rowTraversal = new RowTraversal();
+ColumnTraversal colTraversal = new ColumnTraversal();
+#region Row-Major Traversal Problem
+
 //Problem:
 
 //Input: matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -19,7 +20,12 @@ int[,] matrix = new int[,]
     {4,5,6},
     {7,8,9}
 };
-rowTraversal.rowMajorTraversal(matrix);
+rowTraversal.RowMajorTraversal(matrix);
+
 #endregion 
+
+#region ColumnMajorTraversal
+colTraversal.ColumnMajorTraversal(matrix);
+#endregion
 
 #endregion
