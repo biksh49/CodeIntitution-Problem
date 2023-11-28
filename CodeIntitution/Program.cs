@@ -6,6 +6,7 @@ Console.WriteLine("Hello, World!");
 #region Array
 RowTraversal rowTraversal = new RowTraversal();
 ColumnTraversal colTraversal = new ColumnTraversal();
+Pallindrome pallindrome = new Pallindrome();
 #region Row-Major Traversal Problem
 
 //Problem:
@@ -27,5 +28,19 @@ rowTraversal.RowMajorTraversal(matrix);
 #region ColumnMajorTraversal
 colTraversal.ColumnMajorTraversal(matrix);
 #endregion
+
+
+string inputString = "a man nam a";
+string inputString1 = "race car rac ecar";
+string inputString2 = "This is codeintuition";
+bool isPallindrome=pallindrome.PalindromeChecker(inputString);
+bool isPallindrome1=pallindrome.PalindromeChecker(inputString1);
+bool isPallindrome2=pallindrome.PalindromeChecker(inputString2);
+Console.WriteLine($"The given word is pallindrome : {isPallindrome}");
+Console.WriteLine($"The given word is pallindrome : {isPallindrome1}");
+Console.WriteLine($"The given word is pallindrome : {isPallindrome2}");
+
+bool isValid=pallindrome.IsValid(inputString1);
+Console.WriteLine($"The given word is pallindrome :", isValid);
 
 #endregion
