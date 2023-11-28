@@ -7,6 +7,7 @@ Console.WriteLine("Hello, World!");
 RowTraversal rowTraversal = new RowTraversal();
 ColumnTraversal colTraversal = new ColumnTraversal();
 Pallindrome pallindrome = new Pallindrome();
+FlipCharacters flipCharacters = new FlipCharacters();
 #region Row-Major Traversal Problem
 
 //Problem:
@@ -30,6 +31,8 @@ colTraversal.ColumnMajorTraversal(matrix);
 #endregion
 
 
+#region IsValidPallindrome Problem
+
 string inputString = "a man nam a";
 string inputString1 = "race car rac ecar";
 string inputString2 = "This is codeintuition";
@@ -42,5 +45,11 @@ Console.WriteLine($"The given word is pallindrome : {isPallindrome2}");
 
 bool isValid=pallindrome.IsValid(inputString1);
 Console.WriteLine($"The given word is pallindrome :", isValid);
+#endregion
+
+#region FlipCharacters Problem
+char[] input = new char[] { 'a', 'e', 'i', 'o', 'u' };
+flipCharacters.FlipCharacterss(input);
+#endregion
 
 #endregion
