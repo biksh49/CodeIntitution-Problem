@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CodeIntitution.Array;
+using System.Runtime.CompilerServices;
 
 Console.WriteLine("Hello, World!");
 
@@ -8,6 +9,8 @@ RowTraversal rowTraversal = new RowTraversal();
 ColumnTraversal colTraversal = new ColumnTraversal();
 Pallindrome pallindrome = new Pallindrome();
 FlipCharacters flipCharacters = new FlipCharacters();
+ReverseSegment reverseSegment = new ReverseSegment();
+VowelExchange vowelExchange = new VowelExchange();
 #region Row-Major Traversal Problem
 
 //Problem:
@@ -49,7 +52,22 @@ Console.WriteLine($"The given word is pallindrome :", isValid);
 
 #region FlipCharacters Problem
 char[] input = new char[] { 'a', 'e', 'i', 'o', 'u' };
+
 flipCharacters.FlipCharacterss(input);
+#endregion
+
+#region Reverse Segment
+string s = "abcdefghij"; int k = 2;
+var output=reverseSegment.ReverseSegments(s,k);
+Console.WriteLine(output);
+#endregion
+
+#region VowelExchangeSegment
+//string inputWord = "afegijoku";
+string inputWord = "A man, a plan, a canal: Panama";
+
+var outputWord=vowelExchange.VowelExchanges(inputWord);
+Console.WriteLine(outputWord);
 #endregion
 
 #endregion

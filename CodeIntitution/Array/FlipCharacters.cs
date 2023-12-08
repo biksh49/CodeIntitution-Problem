@@ -11,7 +11,6 @@ namespace CodeIntitution.Array
         public void FlipCharacterss(char[] arr)
         {
             int left=0, right=arr.Length-1;
-
             while(left<right)
             {
                 char temp = arr[left];
