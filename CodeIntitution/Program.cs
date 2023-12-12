@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CodeIntitution.Array;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 
 Console.WriteLine("Hello, World!");
@@ -11,6 +12,7 @@ Pallindrome pallindrome = new Pallindrome();
 FlipCharacters flipCharacters = new FlipCharacters();
 ReverseSegment reverseSegment = new ReverseSegment();
 VowelExchange vowelExchange = new VowelExchange();
+ReverseWord reverseWord = new ReverseWord();
 #region Row-Major Traversal Problem
 
 //Problem:
@@ -70,4 +72,8 @@ var outputWord=vowelExchange.VowelExchanges(inputWord);
 Console.WriteLine(outputWord);
 #endregion
 
+#region Reverse word
+string reverseWordOutput = reverseWord.ReverseWords("This is a string");
+Console.WriteLine(reverseWordOutput);
+#endregion
 #endregion

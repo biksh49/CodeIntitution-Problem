@@ -49,10 +49,6 @@ namespace CodeIntitution.Array
             }
             string output = new string(inputArray);
             return output;
-
-            
-
-            return inputArray.ToString();
         }
     }
 }
