@@ -13,6 +13,8 @@ FlipCharacters flipCharacters = new FlipCharacters();
 ReverseSegment reverseSegment = new ReverseSegment();
 VowelExchange vowelExchange = new VowelExchange();
 ReverseWord reverseWord = new ReverseWord();
+ReverseWordString reverseWordString = new ReverseWordString();
+KRotation kRotation = new KRotation();
 #region Row-Major Traversal Problem
 
 //Problem:
@@ -75,5 +77,15 @@ Console.WriteLine(outputWord);
 #region Reverse word
 string reverseWordOutput = reverseWord.ReverseWords("This is a string");
 Console.WriteLine(reverseWordOutput);
+#endregion
+
+#region ReverseWordString
+string reverseWordStrings = reverseWordString.ReverseWordOrder("This is a string");
+Console.WriteLine(reverseWordStrings);
+#endregion
+
+#region KRotations
+int[] arr = { 1, 2, 3, 4, 5 };
+kRotation.KRotations(arr, 3);
 #endregion
 #endregion
