@@ -93,4 +93,8 @@ kRotation.KRotations(arr, 3);
 #region Container
 container.LargestContainer();
 #endregion
+LimitedSum limitedSum=new LimitedSum();
+int[] inArr = { 34, 23, 1, 24, 75, 33, 54, 8 };
+    int target = 60;
+limitedSum.TargetLimitedTwoSum(inArr, target);
 #endregion
